@@ -50,8 +50,8 @@
 
 Уменьшить количество трудоёмкого ручного экранирования можно, определяя raw-строки с использованием обратных апострофов (`` ` ... ` ``), либо префикса r(aw) (`r" ... "`).
 
-    string raw  =  `raw "string"`;\\raw "string"
-    string raw2 = r"raw "string"";\\raw "string"
+    string raw  =  `raw "string"`; // raw "string"
+    string raw2 = r"raw "string""; // raw "string"
 
 ### Подробнее
 
