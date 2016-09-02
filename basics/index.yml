@@ -1,3 +1,6 @@
 title: D's Basics
 ordering:
+- basic-types
+- controlling-flow
 - alias-strings
+- associative-arrays
