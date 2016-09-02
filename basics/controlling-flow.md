@@ -56,7 +56,9 @@ void main()
         case 10:
             writeln("A Ten!");
             break;
-        default: // если ни одно из условий не выполнилось
+        default: 
+        // если ни одно из условий
+        // не выполнилось
             writeln("Nothing");
             break;
     }
