@@ -2,9 +2,9 @@
 
 D поддерживает классы и интерфейсы подобно Java или C++.
 
-Любой тип `class` неявно наследует от [`Object`](https://dlang.org/phobos/object.html).
+Любой тип `class` неявно наследуется от [`Object`](https://dlang.org/phobos/object.html).
 
-    class Foo { } // наследует от Object
+    class Foo { } // наследуется от Object
     class Bar: Foo { } // Bar тоже является Foo
 
 Классы в D, как правило, создаются на куче с помощью `new`:
@@ -29,7 +29,7 @@ D поддерживает классы и интерфейсы подобно J
         override functionFromFoo() {}
     }
 
-В D классы могут наследовать только от одного класса.
+В D классы могут наследоваться только от одного класса.
 
 #### Конечные и абстрактные методы классов
 
@@ -70,14 +70,15 @@ class Any {
 }
 
 class Integer: Any {
-    // just seen by Integer
+    // видно только из Integer
     private {
         int number;
     }
 
     // конструктор
     this(int number) {
-        // вызов конструктора основного класса
+        // вызов конструктора 
+        // родительского класса
         super("integer");
         this.number = number;
     }
