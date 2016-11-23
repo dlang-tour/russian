@@ -6,14 +6,14 @@
 
 ### Windows
 
-* [Установщик](http://downloads.dlang.org/releases/2.x/2.071.0/dmd-2.071.0.exe)
-* или: [Архив](http://downloads.dlang.org/releases/2.x/2.071.0/dmd.2.071.0.windows.7z)
+* [Установщик](http://downloads.dlang.org/releases/2.x/{{latest-release}}/dmd-{{latest-release}}.exe)
+* или: [Архив](http://downloads.dlang.org/releases/2.x/{{latest-release}}/dmd.{{latest-release}}.windows.7z)
 * или с помощью [chocolatey](https://chocolatey.org/packages/dmd): `choco install dmd`
 
 ### macOS
 
-* `.dmg` [Пакет](http://downloads.dlang.org/releases/2.x/2.071.0/dmd.2.071.0.dmg)
-* или: [Архив](http://downloads.dlang.org/releases/2.x/2.071.0/dmd.2.071.0.osx.tar.xz)
+* `.dmg` [Пакет](http://downloads.dlang.org/releases/2.x/{{latest-release}}/dmd.{{latest-release}}.dmg)
+* или: [Архив](http://downloads.dlang.org/releases/2.x/{{latest-release}}/dmd.{{latest-release}}.osx.tar.xz)
 * или с помощью [Homebrew](http://brew.sh): `brew install dmd`
 
 ### Linux / FreeBSD / macOS
@@ -35,10 +35,10 @@
 существует ещё два компилятора, которые можно найти на странице загрузок
 [dlang.org](https://dlang.org):
 
-* [**GDC**](http://gdcproject.org/downloads) использует GCC backend
 * [**LDC**](https://github.com/ldc-developers/ldc#installation), основанный на LLVM backend
+* [**GDC**](http://gdcproject.org/downloads) использует GCC backend
 
-GDC и LDC не всегда соответствуют самой последней frontend версии DMD, 
+LDC и GDC не всегда соответствуют самой последней frontend версии DMD, 
 но предоставляют более высокие уровни оптимизации и возможность компиляции на
 другие платформы вроде ARM.
 
