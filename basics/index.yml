@@ -2,15 +2,15 @@ title: Основы D
 ordering:
 #- imports-and-modules
 - basic-types
-#- memory
+- memory
 #- storage-classes
 - controlling-flow
-#- functions
+- functions
 - structs
 - arrays
 #- slices
 - alias-strings
-#- loops
+- loops
 - foreach
 #- ranges
 - associative-arrays
