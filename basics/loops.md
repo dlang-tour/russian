@@ -65,8 +65,8 @@ double average(int[] array) {
     double accumulator = 0.0;
     auto length = array.length;
     while (!array.empty) {
-        // Также это можно сделать с помощью .front,
-        // импортировав std.array: front;
+        // Также это можно сделать с помощью
+        // .front, импортировав std.array:front;
         accumulator += array[0];
         array = array[1 .. $];
     }
