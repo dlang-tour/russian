@@ -16,7 +16,7 @@ ordering:
 - associative-arrays
 - classes
 #- interfaces
-#- templates
+- templates
 - delegates
 #- exceptions
 - further-reading
