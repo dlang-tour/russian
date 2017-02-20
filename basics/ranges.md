@@ -4,7 +4,7 @@
 
     foreach(element; range) {
 
-он внутри заменяется на подобный этому:
+он внутри заменяется на код, подобный этому:
 
     for (; !range.empty; range.popFront()) {
         auto element = range.front;
