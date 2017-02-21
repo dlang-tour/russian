@@ -1,22 +1,22 @@
 title: Основы D
 ordering:
-#- imports-and-modules
+- imports-and-modules
 - basic-types
-#- memory
-#- storage-classes
+- memory
+- type-qualifiers
 - controlling-flow
-#- functions
+- functions
 - structs
 - arrays
-#- slices
+- slices
 - alias-strings
-#- loops
+- loops
 - foreach
-#- ranges
+- ranges
 - associative-arrays
 - classes
-#- interfaces
-#- templates
-#- delegates
+- interfaces
+- templates
+- delegates
 #- exceptions
 - further-reading
