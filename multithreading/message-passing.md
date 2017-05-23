@@ -49,7 +49,7 @@
 пока что-либо не будет передано в его почтовый ящик.
 
 
-### In-depth
+### Подробнее
 
 - [Exchanging Messages between Threads](http://www.informit.com/articles/article.aspx?p=1609144&seqNum=5)
 - [Messaging passing concurrency](http://ddili.org/ders/d.en/concurrency.html)
