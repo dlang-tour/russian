@@ -74,7 +74,7 @@
 
     auto fileData = t.yieldForce;
 
-### В деталях
+### Подробнее
 
 - [Parallelism in _Programming in D_](http://ddili.org/ders/d.en/parallelism.html)
 - [std.parallelism](http://dlang.org/phobos/std_parallelism.html)
