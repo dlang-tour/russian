@@ -89,7 +89,7 @@ void setFieldA(bool b);
 struct BitVector
 {
     import std.bitmanip : bitfields;
-    // создаёт приваное поле со следующими
+    // создаёт приватное поле со следующими
     // посредниками:
     mixin(bitfields!(
         uint, "x",    2,
