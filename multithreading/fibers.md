@@ -37,7 +37,7 @@
 неблокирующие (асинхронные) операции ввода-вывода
 на основе волокон, предоставляя более чистый код.
 
-### В деталях
+### Подробнее
 
 - [Fibers in _Programming in D_](http://ddili.org/ders/d.en/fibers.html)
 - [Documentation of core.thread.Fiber](https://dlang.org/library/core/thread/fiber.html)
@@ -97,7 +97,7 @@ void main()
         write("\n");
     }
 
-    // squareFiber можно вызывать ещё, поскольку
-    // оно не завершило исполнение!
+    // squareFiber можно вызывать ещё,
+    // поскольку оно не завершило исполнение!
 }
 ```
