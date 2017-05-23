@@ -47,7 +47,7 @@
     shared int test = 5;
     test.atomicOp!"+="(4);
 
-### В деталях
+### Подробнее
 
 - [Data Sharing Concurrency in _Programming in D_](http://ddili.org/ders/d.en/concurrency_shared.html)
 - [`shared` type qualifier](http://www.informit.com/articles/article.aspx?p=1609144&seqNum=11)
