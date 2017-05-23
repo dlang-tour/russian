@@ -21,7 +21,8 @@ D особо выделяет *функциональное программир
 **слабо-чистые функции**, которые могут иметь изменяемые
 параметры:
 
-    void add(ref int result, int lhs, int rhs) pure {
+    void add(ref int result, int lhs, int rhs)
+    pure {
         result = lhs + rhs;
     }
 
@@ -40,7 +41,7 @@ D особо выделяет *функциональное программир
 для шаблонных и `auto`-функций, если это возможно
 (это так же справедливо для `@safe`, `nothrow`, и `@nogc`).
 
-### В деталях
+### Подробнее
 
 - [Functional DLang Garden](https://garden.dlang.io/)
 
@@ -74,13 +75,14 @@ void main()
 
     // memoize кэширует результат функции,
     // в зависимости от переданных параметров.
-    // чистые функции идеально для этого подходят!
+    // чистые функции идеально
+    // для этого подходят!
     alias fastBigPow = memoize!(bigPow);
 
     void test()
     {
         writefln(".uintLength() = %s ",
-        	   fastBigPow(5, 10000).uintLength);
+        	  fastBigPow(5, 10000).uintLength);
     }
 
     foreach (i; 0 .. 10)

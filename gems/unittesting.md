@@ -53,7 +53,7 @@ D предоставляет удобный встроенный синтакс�
         assert(myAbs() == 1);
     }
 
-### В деталях
+### Подробнее
 
 - [Unit Testing in _Programming in D_](http://ddili.org/ders/d.en/unit_testing.html)
 - [Unittesting in D](https://dlang.org/spec/unittest.html)

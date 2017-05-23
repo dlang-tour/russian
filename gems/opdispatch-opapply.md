@@ -22,7 +22,8 @@ D позволяет переопределять операторы, такие
     }
     struct CallLogger(C) {
         C content;
-        void opDispatch(string name, T...)(T vals) {
+        void opDispatch(string name, T...)
+                                     (T vals) {
             writeln("вызов ", name);
             mixin("content." ~ name)(vals);
         }
@@ -43,9 +44,12 @@ D позволяет переопределять операторы, такие
         Tree lhs;
         Tree rhs;
         int opApply(int delegate(Tree) dg) {
-            if (lhs && lhs.opApply(dg)) return 1;
-            if (dg(this)) return 1;
-            if (rhs && rhs.opApply(dg)) return 1;
+            if (lhs && lhs.opApply(dg))
+                return 1;
+            if (dg(this))
+                return 1;
+            if (rhs && rhs.opApply(dg))
+                return 1;
             return 0;
         }
     }
@@ -58,10 +62,10 @@ D позволяет переопределять операторы, такие
 делегат, который передаёт объекту. Единственный его
 параметр - индекс текущей итерации.
 "Волшебное" возвращаемое значение типа `int`
-необходимо интерпретировать, и, в случае, если это не `0`,
+необходимо интерпретировать и в случае, если это не `0`,
 прекратить цикл.
 
-### В деталях
+### Подробнее
 
 - [Operator overloading in _Programming in D_](http://ddili.org/ders/d.en/operator_overloading.html)
 - [`opApply` in _Programming in D_](http://ddili.org/ders/d.en/foreach_opapply.html)
@@ -71,8 +75,8 @@ D позволяет переопределять операторы, такие
 
 ```d
 /*
-Variant - объект, способный хранить любой другой
-тип:
+Variant - объект, способный хранить
+любой другой тип:
 https://dlang.org/phobos/std_variant.html
 */
 
@@ -107,7 +111,8 @@ void main() {
     writeln("test.bar = ", test.bar);
     test.foobar = 3.1415;
     writeln("test.foobar = ", test.foobar);
-    // ОШИБКА, т.к. такой член ещё не существует
+    // ОШИБКА, т.к. такой член
+    // ещё не существует
     // writeln("test.notthere = ",
     //   test.notthere);
 }

@@ -99,7 +99,7 @@ void test(string file = __FILE__, size_t line = __LINE__, string mod = __MODULE_
 rdmd --force --eval='pragma(msg, __TIMESTAMP__);'
 ```
 
-## В деталях
+## Подробнее
 
 - [std.range.primitives](https://dlang.org/phobos/std_range_primitives.html)
 - [std.traits](https://dlang.org/phobos/std_traits.html)
@@ -122,7 +122,8 @@ import std.traits : isNarrowString;
 
 /**
 Возвращает общий префикс двух диапазонов,
-особый случай с авто-декодированием не рассматривается.
+особый случай с авто-декодированием
+не рассматривается.
 
 Params:
     pred = Предикат для определения "общности"
@@ -130,8 +131,8 @@ Params:
     r2 = Диаразон input range.
 
 Returns:
-Срез r1, содержащий символы, одинаковые в начале
-обоих диапазонов.
+Срез r1, содержащий символы,
+одинаковые в начале обоих диапазонов.
  */
 auto commonPrefix(alias pred = "a == b", R1, R2)
                  (R1 r1, R2 r2)
