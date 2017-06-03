@@ -139,7 +139,7 @@ void main()
     }
 
     // Подождём, пока все потоки не подтвердили
-    // получение запроса на останов
+    // получение запроса на остановку
     foreach(ref tid; threads) {
         receiveOnly!CancelAckMessage;
         writeln("Received CancelAckMessage!");
