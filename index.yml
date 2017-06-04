@@ -4,3 +4,5 @@ repo: dlang-tour/russian
 ordering:
 - welcome
 - basics
+- gems
+- multithreading
