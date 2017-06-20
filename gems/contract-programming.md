@@ -127,7 +127,7 @@ struct Date {
     в формате ГГГГ-ММ-ДД
 
     Returns: Строковое представление Date
-    /*
+    */
     string toString() const
     out (result) {
         import std.algorithm : all, count,
