@@ -105,7 +105,7 @@ struct Date {
         date = сериализуемая строка
         
     Returns: Объект типа Date.
-    /*
+    */
     void fromString(string date)
     in {
         assert(date.length == 10);
