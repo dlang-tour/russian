@@ -59,14 +59,14 @@ throw new UserNotFoundException("D-Man is on vacation");
 
 ### Войдите в безопасный мир с `nothrow`
 
-Компилятор D может обеспечивать, чтобы функция не стала причиной катастрофических побочных эффектов.
+Компилятор D может следить за тем, чтобы функция не стала причиной катастрофических побочных эффектов.
 Такие функции могут быть объявлены с ключевым словом `nothrow`. Компилятор D статически
 запрещает инициировать исключения в `nothrow` функциях.
 
 ```d
 bool lessThan(int a, int b) nothrow
 {
-    writeln("unsafe world"); // output can throw exceptions, thus this is forbidden
+    writeln("unsafe world"); // вывод может инициировать исключения, поэтому такое запрещено
     return a < b;
 }
 ```
@@ -78,19 +78,19 @@ bool lessThan(int a, int b) nothrow
 Важно избегать контрактного программирования для пользовательского ввода, так как
 контракты удаляются при компиляции в режиме Release.
 Для удобства, `std.exception` предоставляет метод `enforce`, который может быть
-использован подобно `assert`'ам, но инициирует `Exceptions` вместо `AssertError`.
+использован подобно `assert`'ам, но инициирует `Exception`'ы вместо `AssertError`.
 
 ```d
 import std.exception : enforce;
 float magic = 1_000_000_000;
 enforce(magic + 42 - magic == 42, "Floating-point math is fun");
 
-// throw custom exceptions
+// Инициирование пользовательского исключения
 enforce!StringException('a' != 'A', "Case-sensitive algorithm");
 ```
 
 Однако, в `std.exception` есть не только это. Например, когда ошибка может быть не фатальной,
-исключение может быть накоплено (`collect`):
+исключение может быть "накоплено" (`collect`):
 
 ```d
 import std.exception : collectException;
@@ -122,13 +122,14 @@ void main()
     }
     catch (FileException e)
     {
-		writeln("Message:\n", e.msg);
-		writeln("File: ", e.file);
-		writeln("Line: ", e.line);
-		writeln("Stack trace:\n", e.info);
+        writeln("Message:\n", e.msg);
+        writeln("File: ", e.file);
+        writeln("Line: ", e.line);
+        writeln("Stack trace:\n", e.info);
 
-		// Default formatting could be used too
-		// writeln(e);
+        // Форматирование по умолчанию также
+        // могло быть использовано 
+        // writeln(e);
     }
 }
 ```
