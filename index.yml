@@ -13,4 +13,10 @@ translations:
  editor.format: Форматировать
  editor.keyboard_shortcuts: Клавиатурные сокращения
  editor.export: Экспорт
- 
+ hotkeys.help_title: Клавиатурные сокращения
+ hotkeys.show_hide_help: Показать / скрыть эту подсказку
+ hotkeys.previous_section: Перейти к предыдущей секции
+ hotkeys.next_section: Перейти к следующей секции
+ hotkeys.run_source_code: Выполнить исходный код
+ hotkeys.reset_source_code: Сбросить исходный код
+ hotkeys.format_source_code: Форматировать исходный код
