@@ -18,5 +18,5 @@ ordering:
 - interfaces
 - templates
 - delegates
-#- exceptions
+- exceptions
 - further-reading
