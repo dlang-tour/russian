@@ -7,3 +7,10 @@ ordering:
 - gems
 - multithreading
 - vibed
+translations:
+ editor.run: Выполнить
+ editor.reset: Сброс
+ editor.format: Форматировать
+ editor.keyboard_shortcuts: Клавиатурные сокращения
+ editor.export: Экспорт
+ 
