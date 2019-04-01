@@ -33,7 +33,7 @@ UFCS особенно важен при работе с *диапазонами*
 понятный и поддерживаемый код.
 
     import std.algorithm : group;
-    import std.range : chain, retro, front, retro;
+    import std.range : chain, retro, front, dropOne;
     [1, 2].chain([3, 4]).retro; // 4, 3, 2, 1
     [1, 1, 2, 2, 2].group.dropOne.front; // tuple(2, 3u)
 
